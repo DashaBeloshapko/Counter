@@ -1,0 +1,15 @@
+ul {
+    counter-reset: item;
+    list-style: none;
+}
+li::before {
+    counter-increment: item;
+    content: counters(item, ".") ". ";
+}
+.picture {
+    margin: auto;
+}
+body {
+    width: 1170px;
+}
+
